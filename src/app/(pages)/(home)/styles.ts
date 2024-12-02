@@ -1,13 +1,20 @@
-"use client";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5f5f5;
+  min-height: 100vh; /* Altura mínima da página */
+  background-color: #4C9A9A;
 
+  header {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1; /* Garante que o conteúdo ocupe o espaço disponível */
+  }
+
+  footer {
+    flex-shrink: 0;
+  }
 `;

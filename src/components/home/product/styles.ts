@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
- width: 80%;
- padding-top: 15rem;
+ width: 95%;
+ padding-top: 2rem;
 `;
 
 export const StatsBar = styled.div`
