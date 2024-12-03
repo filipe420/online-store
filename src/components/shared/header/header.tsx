@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             {/* Logo */}
             <a href="/">
               <S.Logo>
-                Growth Supplements
+                86 suplementos
               </S.Logo>
 
             </a>
