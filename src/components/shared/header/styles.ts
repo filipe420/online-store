@@ -1,91 +1,49 @@
-
 import styled from "styled-components";
 
-export const Container = styled.header`
-  position: absolute;
-  top: 0;
-  left: 0;
+export const HeaderContainer = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: fixed;
   width: 100%;
-  z-index: 1000;
-  background-color: #fff; 
+  top: 0;
+  z-index: 999;
+`;
 
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #006666;
-    color: white;
-    padding: 10px 20px;
+export const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
 
-    .social-icons a {
-      margin-right: 10px;
-      color: white;
-      text-decoration: none;
-    }
+export const Logo = styled.a`
+  font-size: 24px;
+  font-weight: bold;
+  color: #088178;
+  text-decoration: none;
+`;
 
-    .store-info a {
-      margin-left: 15px;
-      color: white;
-      text-decoration: none;
-    }
+export const NavList = styled.ul`
+  display: flex;
+`;
 
-    .cart-info {
-      font-size: 16px;
-    }
-  }
+export const NavItem = styled.li`
+  list-style: none;
+  margin: 0 20px;
 
-  .header-middle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #4C9A9A;
-    padding: 20px;
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s;
 
-    .logo img {
-      width: 100px;
-    }
-
-    .search-bar {
-      display: flex;
-      align-items: center;
-
-      input {
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      button {
-        margin-left: 8px;
-        background-color: #004d4d;
-        color: white;
-        padding: 8px 12px;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-      }
-    }
-
-    .account-info a {
-      margin-left: 20px;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-  }
-
-  .navigation {
-    display: flex;
-    justify-content: center;
-    background-color:#008080 ;
-    padding: 10px;
-
-    a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
+    &:hover {
+      color: #088178;
     }
   }
 `;
